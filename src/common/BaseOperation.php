@@ -15,7 +15,7 @@ class BaseOperation
 
     public $sanBox=false;
 
-    public $domain="http://www.hwt88.cn";
+    public $domain="https://www.hwt88.cn";
 
     protected $host='/openapi/v1/request';
 
