@@ -1,0 +1,34 @@
+{
+    "name": "iboxs/hwt",
+    "description": "花务通新开放平台SDK",
+    "type": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itlattice",
+            "email": "itlattice@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-redis":"*",
+        "iboxs/redis": "1.1.0",
+      "ext-curl": "*",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "iboxs\\hwt\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "iboxs": {
+            "config":{
+                "hwt": "src/common/hwt.php"
+            }
+        }
+    }
+}
