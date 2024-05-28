@@ -18,7 +18,8 @@ trait Sign
             'appid'=>$this->appid,
             'time'=>$now,
             'sign'=>$this->getSign($now),
-            'sanbox'=>$this->sanBox==true?1:0
+            'sanbox'=>$this->sanBox==true?1:0,
+            'request_id'=>randStr(32)
         ];
         $response=$this->postJson($this->domain.$url,$data,$headers);
         if($response['code']!=0){

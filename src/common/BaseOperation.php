@@ -15,7 +15,7 @@ class BaseOperation
 
     public $sanBox=false;
 
-    public $domain="https://www.hwt88.cn";
+    public $domain="http://hwt.gz8.co";
 
     protected $host='/openapi/v1/request';
 
@@ -35,6 +35,7 @@ class BaseOperation
             return $value !== null;
         });
         $data['action']=$action;
+        $data['request_id']=randStr(32);
         $data['companyNo']=$this->companyNo;
         $token=$this->getToken();
         $headers = [
